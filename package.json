@@ -16,5 +16,9 @@
     "url": "https://github.com/sasatake/aws-lambda-express-sample/issues"
   },
   "homepage": "https://github.com/sasatake/aws-lambda-express-sample#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@vendia/serverless-express": "^4.3.3",
+    "express": "^4.17.1"
+  }
 }
