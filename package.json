@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/sasatake/aws-lambda-express-sample/issues"
   },
-  "homepage": "https://github.com/sasatake/aws-lambda-express-sample#readme"
+  "homepage": "https://github.com/sasatake/aws-lambda-express-sample#readme",
+  "type": "module"
 }
