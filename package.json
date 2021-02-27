@@ -20,6 +20,7 @@
   "type": "module",
   "dependencies": {
     "@vendia/serverless-express": "^4.3.3",
+    "bunyan": "^1.8.15",
     "cors": "^2.8.5",
     "express": "^4.17.1"
   },
