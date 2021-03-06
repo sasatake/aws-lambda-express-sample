@@ -5,8 +5,13 @@ service: aws-lambda-express-sample
 provider:
   name: aws
   region: ap-northeast-1
+  lambdaHashingVersion: 20201221
 
 functions:
   api:
     handler: index.handler
     name: serverless-express-function-serverless-api
+    package:
+      include:
+        - index.js
+        - src/**
