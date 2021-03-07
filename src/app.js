@@ -1,12 +1,11 @@
-const express = require('express')
-const cors = require('cors')
-const bunyan = require('bunyan')
-const getRouter = require('./routes/index.js')
+const express = require('express');
+const cors = require('cors');
+const bunyan = require('bunyan');
+const getRouter = require('./routes/index.js');
 
 const corsOptions = {
   origin: 'http://localhost:8080',
 };
-const port = 3000;
 
 const app = express();
 const logger = bunyan.createLogger({ name: 'aws-lambda-express' });
@@ -22,6 +21,4 @@ const defaultRouter = express.Router();
 const router = getRouter(defaultRouter, cors(corsOptions));
 app.use('/', router);
 
-app.listen(port, () => {
-  logger.info(`app listening at http://localhost:${port}`);
-});
+module.exports = app;

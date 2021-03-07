@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "nodemon src/app.js",
+    "serve": "nodemon index.local.js",
     "lint": "eslint src/",
     "deploy": "serverless deploy function -f api"
   },
