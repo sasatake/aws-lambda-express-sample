@@ -5,4 +5,4 @@ const getRouter = (router, cors) => {
   return router;
 };
 
-export default getRouter;
+module.exports = getRouter;

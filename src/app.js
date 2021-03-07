@@ -1,7 +1,7 @@
-import express from 'express';
-import cors from 'cors';
-import bunyan from 'bunyan';
-import getRouter from './routes/index.js';
+const express = require('express')
+const cors = require('cors')
+const bunyan = require('bunyan')
+const getRouter = require('./routes/index.js')
 
 const corsOptions = {
   origin: 'http://localhost:8080',
